@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kinopoisk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+622cf07a175ba00dd596a5162f7dca244d2091a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kinopoisk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kinopoisk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
