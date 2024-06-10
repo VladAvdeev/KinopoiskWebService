@@ -8352,26 +8352,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vavdeev\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {},
+    "C:\\Users\\vladi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\source\\KinopoiskWebService\\Kinopoisk\\Kinopoisk.csproj",
+      "projectUniqueName": "C:\\Users\\vladi\\source\\repos\\Kinopoisk\\Kinopoisk\\Kinopoisk.csproj",
       "projectName": "Kinopoisk",
-      "projectPath": "D:\\source\\KinopoiskWebService\\Kinopoisk\\Kinopoisk.csproj",
-      "packagesPath": "C:\\Users\\vavdeev\\.nuget\\packages\\",
-      "outputPath": "D:\\source\\KinopoiskWebService\\Kinopoisk\\obj\\",
+      "projectPath": "C:\\Users\\vladi\\source\\repos\\Kinopoisk\\Kinopoisk\\Kinopoisk.csproj",
+      "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vladi\\source\\repos\\Kinopoisk\\Kinopoisk\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vavdeev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8379,7 +8376,6 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
