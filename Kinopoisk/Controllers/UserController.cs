@@ -29,7 +29,7 @@ namespace Kinopoisk.Controllers
             return userEntity;
 
         }
-        [HttpPut("users/{id}")]
+        [HttpPut("users")]
         public User UpdateUser([FromRoute]int id,[FromBody]User user)
         {
             using MovieDbContext movieDbContext = new MovieDbContext();
@@ -45,7 +45,7 @@ namespace Kinopoisk.Controllers
 
         }
 
-        [HttpPut("users2/{id}")]
+        [HttpPut("users2")]
         [ProducesResponseType(typeof(User), 200)]
         [ProducesResponseType(typeof(ResponseModel), 500)]
         [ProducesResponseType(404)]
@@ -77,7 +77,7 @@ namespace Kinopoisk.Controllers
 
         }
         
-        [HttpDelete("users/{id}")]
+        [HttpDelete("users")]
         [ProducesResponseType(typeof(User), 200)]
         [ProducesResponseType(typeof(ResponseModel), 500)]
         [ProducesResponseType(404)]

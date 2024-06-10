@@ -40,34 +40,34 @@ namespace Kinopoisk.Controllers
             }
         }
         //проверить
-        [HttpPost("producer")]
-        [ProducesResponseType(typeof(Producer), 200)]
-        [ProducesResponseType(typeof(ResponseModel), 500)]
-        [ProducesResponseType(404)]
-        [ProducesResponseType(400)]
-        public IActionResult AddProducer([FromBody]ProducerDTO producer)
-        {
-            try
-            {
-            using MovieDbContext movieDbContext = new MovieDbContext();
-                movieDbContext.Producers.Add(new Producer
-                {
-                    ProducerId = producer.Id,
-                    FirstName = producer.FirstName,
-                    LastName = producer.LastName,
-                    BirthDay = producer.BirthDay,
-                    Country = producer.Country,
-                    // producer.MovieList.Select(t => new JenreToMovie { IdMovie = t.Id, Movie = new Movie { MovieName = t.Name } }).ToList()
-                    Movies = producer.MovieList.Select(t => new Movie { MovieId = t.Id, MovieName = t.Name }).ToList()
-                });
-            movieDbContext.SaveChanges();
-            return Ok(producer);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode((int)HttpStatusCode.InternalServerError, new ResponseModel(228, "Сервер дал сбой"));
-            }
-        }
+        //[HttpPost("producer")]
+        //[ProducesResponseType(typeof(Producer), 200)]
+        //[ProducesResponseType(typeof(ResponseModel), 500)]
+        //[ProducesResponseType(404)]
+        //[ProducesResponseType(400)]
+        //public IActionResult AddProducer([FromBody]ProducerDTO producer)
+        //{
+        //    try
+        //    {
+        //    using MovieDbContext movieDbContext = new MovieDbContext();
+        //        movieDbContext.Producers.Add(new Producer
+        //        {
+        //            ProducerId = producer.Id,
+        //            FirstName = producer.FirstName,
+        //            LastName = producer.LastName,
+        //            BirthDay = producer.BirthDay,
+        //            Country = producer.Country,
+        //            // producer.MovieList.Select(t => new JenreToMovie { IdMovie = t.Id, Movie = new Movie { MovieName = t.Name } }).ToList()
+        //            Movies = producer.MovieList.Select(t => new Movie { MovieId = t.Id, MovieName = t.Name }).ToList()
+        //        });
+        //    movieDbContext.SaveChanges();
+        //    return Ok(producer);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode((int)HttpStatusCode.InternalServerError, new ResponseModel(228, "Сервер дал сбой"));
+        //    }
+        //}
         [HttpPost("producer")]
         [ProducesResponseType(typeof(Producer), 200)]
         [ProducesResponseType(typeof(ResponseModel), 500)]
