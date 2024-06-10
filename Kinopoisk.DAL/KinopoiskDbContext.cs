@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Kinopoisk.DAL
 {
-    internal class KinopoiskDbContext : DbContext
+    public class KinopoiskDbContext : DbContext
     {
 
     }

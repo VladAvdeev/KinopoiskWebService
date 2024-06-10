@@ -7,10 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entity\" />
-    <Folder Include="Enum\" />
-    <Folder Include="Response\" />
-    <Folder Include="ViewModels\" />
+    <Compile Remove="Entity\**" />
+    <Compile Remove="Enum\**" />
+    <Compile Remove="Response\**" />
+    <Compile Remove="ViewModels\**" />
+    <EmbeddedResource Remove="Entity\**" />
+    <EmbeddedResource Remove="Enum\**" />
+    <EmbeddedResource Remove="Response\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
+    <None Remove="Entity\**" />
+    <None Remove="Enum\**" />
+    <None Remove="Response\**" />
+    <None Remove="ViewModels\**" />
   </ItemGroup>
 
 </Project>
