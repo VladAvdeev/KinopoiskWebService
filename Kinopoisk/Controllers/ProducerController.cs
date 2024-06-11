@@ -68,7 +68,7 @@ namespace Kinopoisk.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, new ResponseModel(228, "Сервер дал сбой"));
             }
         }
-        [HttpPost("producer")]
+        [HttpPut("producer")]
         [ProducesResponseType(typeof(Producer), 200)]
         [ProducesResponseType(typeof(ResponseModel), 500)]
         [ProducesResponseType(404)]

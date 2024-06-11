@@ -6,6 +6,7 @@ using System.Net;
 
 namespace Kinopoisk.Controllers
 {
+    [Route("api")]
     public class UserController : ControllerBase
     {
         [HttpGet("users")]

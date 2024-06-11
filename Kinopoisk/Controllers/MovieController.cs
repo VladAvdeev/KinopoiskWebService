@@ -9,7 +9,7 @@ using System.Net;
 
 namespace Kinopoisk.Controllers
 {
-    
+    [Route("api")]
     public class MovieController : ControllerBase
     {
         [HttpGet("movies")]

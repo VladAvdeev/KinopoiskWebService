@@ -8,12 +8,20 @@ using static Kinopoisk.Db.Entities.Producer;
 namespace Kinopoisk.Db
 {
     public class MovieDbContext : DbContext
-        //обращение и подключение к базе данных
+    //обращение и подключение к базе данных
     {
+        //private readonly IConfiguration _configuration;
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Jenre> Jenres { get; set; }
         public DbSet<Producer> Producers { get; set; }
         public DbSet<User> Users { get; set; }
+
+        //public MovieDbContext() { }
+
+        //public MovieDbContext(IConfiguration configuration)
+        //{
+        //    _configuration = configuration;
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,9 +34,10 @@ namespace Kinopoisk.Db
             modelBuilder.ApplyConfiguration(new JenreToMoviesConfiguration());*/
         }
         
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=kinopoisk;Username=postgres;Password=12345");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //"Host=localhost;Port=5432;Database=kinopoisk;Username=postgres;Password=12345"
+        //    optionsBuilder.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
+        //}
     }
 }

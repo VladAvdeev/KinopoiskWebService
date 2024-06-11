@@ -5,11 +5,9 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinopoisk", "Kinopoisk\Kinopoisk.csproj", "{0218819E-CF14-4626-B1C8-2F234ADBDC8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinopoisk.DAL", "Kinopoisk.DAL\Kinopoisk.DAL.csproj", "{59C612B9-6291-41D0-A469-014BEB992E53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinopoiskData", "KinopoiskData\KinopoiskData.csproj", "{5806648E-471A-4DBC-85C7-E820EEA98A5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinopoisk.Domain", "Kinopoisk.Domain\Kinopoisk.Domain.csproj", "{15C23BD2-7C8D-4259-A2FB-1470973C94C8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinopoisk.Service", "Kinopoisk.Service\Kinopoisk.Service.csproj", "{154597A5-F645-4883-832A-57DED0837A7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KinopoiskDomain", "KinopoiskDomain\KinopoiskDomain.csproj", "{B40AE62D-A8F7-49FC-8C32-0B7993B55471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,14 @@ Global
 		{0218819E-CF14-4626-B1C8-2F234ADBDC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0218819E-CF14-4626-B1C8-2F234ADBDC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0218819E-CF14-4626-B1C8-2F234ADBDC8A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59C612B9-6291-41D0-A469-014BEB992E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59C612B9-6291-41D0-A469-014BEB992E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59C612B9-6291-41D0-A469-014BEB992E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59C612B9-6291-41D0-A469-014BEB992E53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15C23BD2-7C8D-4259-A2FB-1470973C94C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15C23BD2-7C8D-4259-A2FB-1470973C94C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15C23BD2-7C8D-4259-A2FB-1470973C94C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15C23BD2-7C8D-4259-A2FB-1470973C94C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{154597A5-F645-4883-832A-57DED0837A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{154597A5-F645-4883-832A-57DED0837A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{154597A5-F645-4883-832A-57DED0837A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{154597A5-F645-4883-832A-57DED0837A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5806648E-471A-4DBC-85C7-E820EEA98A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5806648E-471A-4DBC-85C7-E820EEA98A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5806648E-471A-4DBC-85C7-E820EEA98A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5806648E-471A-4DBC-85C7-E820EEA98A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40AE62D-A8F7-49FC-8C32-0B7993B55471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40AE62D-A8F7-49FC-8C32-0B7993B55471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40AE62D-A8F7-49FC-8C32-0B7993B55471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40AE62D-A8F7-49FC-8C32-0B7993B55471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
